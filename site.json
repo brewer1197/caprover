@@ -4,7 +4,7 @@
     "services": [
       {
         "image": "php:8.2-apache",
-        "containerHttpPort": "80",
+        "containerHttpPort": 80,
         "volumes": [
           {
             "hostPath": "/captain/data/%%APPNAME%%",
