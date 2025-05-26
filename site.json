@@ -1,0 +1,28 @@
+[
+  {
+    "captainVersion": "4",
+    "services": [
+      {
+        "image": "php:8.2-apache",
+        "containerHttpPort": "80",
+        "volumes": [
+          {
+            "hostPath": "/captain/data/%%APPNAME%%",
+            "containerPath": "/var/www/html"
+          }
+        ]
+      }
+    ],
+    "instructions": {
+      "start": "Универсальный PHP-сайт с volume. Загрузи CMS вручную.",
+      "end": "Файлы будут доступны по адресу сайта. Загрузи CMS через FileBrowser."
+    },
+    "caproverOneClickApp": {
+      "displayName": "Universal PHP Site",
+      "description": "Apache + PHP. Сам заливай CMS или HTML.",
+      "isOfficial": false,
+      "documentation": "https://www.php.net/manual/en/"
+    },
+    "variables": []
+  }
+]
